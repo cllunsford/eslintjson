@@ -6,7 +6,7 @@ RUN npm install -g \
     prettier \
     eslint-plugin-json \
     eslint-plugin-prettier \
-    rm -rf /root/.npm
+    && rm -rf /root/.npm
 
 WORKDIR /src
 ENTRYPOINT ["/usr/local/bin/eslint"]
