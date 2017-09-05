@@ -8,6 +8,7 @@ RUN npm install -g \
     eslint-plugin-prettier \
     && rm -rf /root/.npm
 
+ADD .eslintrc.json /src/.eslintrc.json
 WORKDIR /src
 ENTRYPOINT ["/usr/local/bin/eslint"]
 
